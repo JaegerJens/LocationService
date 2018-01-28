@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Location Service</title>
+    <style type="text/css">
+body {
+    background-color: lightgrey;
+    padding: 0;
+}
+.newlocation {
+    background-color: green;
+    border: solid 3px black;
+    border-radius: 8px;
+    box-shadow: 5px 5px grey;
+    padding: 5px;
+    margin: 0;
+}
+button {
+    margin: 10px;
+    padding: 5px;
+}
+input {
+    margin: 10px;
+    line-height: 175%;
+    width: calc(100% - 20px);
+}
+
+.card {
+    background-color: white;
+    border: solid 3px black;
+    border-radius: 8px;
+    box-shadow: 5px 5px grey;
+    padding: 15px;
+    margin: 30px 10px 30px 10px;
+}
+    </style>
+</head>
+<body>
+    <h1>Location Service</h1>
+    <div class="newlocation">
+        <form>
+            <input type="text" name="locationName" placeholder="location name">
+            <button>Add current location</button>
+        </form>
+    </div>
+    <div>
+        <h2>Known locations</h2>
+        <div class="card">
+            <h3>Home</h3>
+            <div class="direction">
+                <span class="arrow">North</span>
+                <span class="distance">300 m</span>
+            </div>
+        </div>
+        <div class="card">
+            <h3>Work</h3>
+            <div class="direction">
+                <span class="arrow">East</span>
+                <span class="distance">15 km</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
